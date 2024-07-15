@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 12px;
+  padding: 28px 28px;
+}
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input {
+  width: 84%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+  background-color: rgb(188, 218, 231);
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+.search-box input::placeholder {
+  color: #000;
+}
+
+.search-box button {
+  width: 46px;
+  height: 46px;
+  background-color: rgb(188, 218, 231);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-box button:hover {
+  color: white;
+  background-color: gray;
+}
+.weather-body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.weather-body img {
+  width: 60%;
+}
+
+.weather-box {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temperature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 400;
+}
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.weather-details #humidity {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px;
+}
+.weather-details p {
+  font-size: 20px;
+}
+
+.weather-details #wind-speed {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px;
+}
+.weather-details p {
+  font-size: 20px;
+}
+.location-not-found {
+  margin-top: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.location-not-found h1 {
+  font-size: 20px;
+  color: gray;
+  margin-block-end: 15px;
+}
+.location-not-found img {
+  width: 80%;
+}
